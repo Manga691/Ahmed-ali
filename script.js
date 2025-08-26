@@ -35,7 +35,7 @@ async function fetchInfo() {
         
         // إشعارات منبثقة
         setTimeout(() => alert('Ahmed ali 3la zby '), 1000);
-        setTimeout(() => alert('ahmed ali manga '), 3000);
+        setTimeout(() => alert('ELm3lem KFC'), 3000);
 
     } catch (error) {
         console.error('Error:', error);
