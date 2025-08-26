@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #eee7e7 url('ahmedali.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    animation: flash 0.8s infinite;
+}
+
+.info {
+    margin-top: 20px;
+    font-size: 1.2em;
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    box-shadow: 0 0 20px #ff0000;
+}
+
+.text {
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 5px;
+    animation: pulse 1s infinite;
+}
+
+.discord {
+    margin-top: 30px;
+    font-size: 1.5em;
+    background-color: rgba(243, 8, 8, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* تنسيقات خاصة بالـ IP */
+#ip {
+    color: #050303;
+    text-shadow: 0 0 5px #ff0000;
+    font-weight: bold;
+    animation: blink 1s infinite;
+}
+
+/* تأثيرات الحركة */
+@keyframes pulse {
+    0% { transform: scale(1); color: #ff0000; text-shadow: 0 0 10px #ff0000; }
+    50% { transform: scale(1.1); color: #ff3333; text-shadow: 0 0 20px #ff3333; }
+    100% { transform: scale(1); color: #ff0000; text-shadow: 0 0 10px #ff0000; }
+}
+
+@keyframes flash {
+    0% { background-color: rgba(0,0,0,0.8); }
+    50% { background-color: rgba(255,0,0,0.3); }
+    100% { background-color: rgba(0,0,0,0.8); }
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
